@@ -1,0 +1,70 @@
+/*========== CONTACT ==========*/
+
+.contact {
+  padding-top: 200px;
+  margin-bottom: 100px;
+
+  display: block;
+  justify-content: center;
+
+}
+
+
+.contact__container {
+  margin: 20px 150px;
+
+
+}
+
+
+
+.contact__button,
+.contact__data {
+
+  text-align: left;
+
+}
+
+
+.section-subtitle {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 60px;
+  font-size: 25px;
+
+}
+
+
+.section-title {
+
+  font-weight: bold;
+  font-size: 50px;
+
+  padding-top: 40px;
+
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+
+.contact__description {
+  margin-bottom: var(--mb-3);
+}
+
+
+.button {
+  display: inline-block;
+
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+
+  border-radius: .5rem;
+  color: #FFF;
+
+  transition: .3s;
+
+}
+
+.button:hover {
+  background-color: rgb(72, 85, 53);
+}

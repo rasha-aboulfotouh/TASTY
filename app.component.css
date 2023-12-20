@@ -1,0 +1,175 @@
+
+
+
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 2rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background: rgba(6, 156, 84, .5);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+}
+
+.bx {
+  font-family: 'boxicons'!important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  speak-as: none;
+  -webkit-font-smoothing: antialiased;
+}
+    
+
+.scrolltop:hover {
+  background-color: green;
+}
+
+.scrolltop__icon {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Show scrolltop */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+
+
+
+/**/
+.nav__logo {
+  padding-left: 80px;
+  font-size: 35;
+}
+
+
+
+ul {
+  padding: 10px;
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-left: 30px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 23px;
+
+}
+
+
+
+/*========== LAYOUT ==========*/
+
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: var(--z-fixed);
+}
+
+/*========== NAV ==========*/
+.nav {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: .4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: var(--z-fixed);
+  }
+}
+
+.nav__menu {
+  margin-left: 150px;
+  float: left;
+}
+
+.nav__item {
+  margin-bottom: var(--mb-2);
+}
+
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+ .nav__link {
+  transition: .3s;
+} 
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 2.5rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+/* Show menu */
+.show-menu {
+  top: var(--header-height);
+}
+
+/* Active menu */
+.active-link {
+  color: green;
+}
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+

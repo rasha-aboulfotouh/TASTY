@@ -1,0 +1,85 @@
+
+
+/*========== FOOTER ==========*/
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+footer {
+  display: block;
+  align-content: center;
+}
+
+.footer__container {
+
+  padding-top: 200px;
+
+  
+
+}
+
+
+.footer__logo {
+  font-size: 35px;
+
+  font-weight: bold;
+  color: green;
+
+}
+
+.footer__description {
+  display: block;
+  font-size: 26px;
+  margin: .25rem 0 var(--mb-3);
+}
+
+.footer__social {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-right: var(--mb-2);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.footer__content {
+  text-align: center;
+
+}
+
+
+.footer__title {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+ul {
+  list-style: none;
+
+}
+
+
+.footer__link  {
+  display: inline-block;
+  color: var(--text-color);
+  margin-bottom:10px;
+  font-size: 20px;
+ 
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-top: 3.5rem;
+}

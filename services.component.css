@@ -1,0 +1,54 @@
+.services {
+  padding-top: 100px;
+  margin: 0 60px;
+
+}
+
+
+/*========== SERVICES ==========*/
+.services__container {
+
+  margin: 10px 50px;
+
+ 
+
+}
+
+.services__content {
+  text-align: center;
+}
+
+.services__img {
+  width: 64px;
+  height: 64px;
+  fill: green;
+  margin-bottom: 50px;
+
+
+}
+
+
+.section-subtitle {
+  color: green;
+  font-weight: bold;
+  padding-bottom: 40px;
+
+}
+
+.section-title {
+
+  padding-bottom: 30px;
+  
+}
+
+
+.services__title {
+  font-size: 25px;
+  color: var(--title-color);
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.services__description {
+  padding: 0 1.5rem;
+}

@@ -1,0 +1,57 @@
+.l-main {
+  margin-top: 160px;
+}
+
+.home {
+  display: block;
+}
+
+
+/*========== HOME ==========*/
+.home__container {
+  height: 500px;
+  align-content: center;
+}
+
+.home__title {
+  font-size: 90px;
+  color: green;
+  
+  margin-bottom: 30px;
+}
+
+.home__subtitle {
+
+  font-size: 40px;
+
+  
+  margin: 20px 0;
+}
+
+
+
+
+
+.home__img {
+  width: 450px;
+  justify-self: center;
+}
+
+
+.button {
+  display: inline-block;
+ 
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+
+  border-radius: .5rem;
+  color: #FFF;
+
+  transition: .3s;
+
+}
+
+
+.button:hover {
+  background-color: rgb(72, 85, 53);
+} 

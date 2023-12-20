@@ -1,0 +1,86 @@
+/*========== CLASS CSS ==========*/
+.section {
+  padding: 5rem 0 ;
+  padding-top: 8rem;
+  margin-top:20px;
+  display: block;
+  align-content: center;
+
+ 
+}
+
+.about__container {
+  align-items: center;
+  margin-top: 20px;
+
+  margin-right:180px ;
+  margin-left:180px ;
+
+
+}
+
+
+.section-title,
+.section-subtitle {
+  text-align: left;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: bolder;
+
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  display: block;
+  color: green ;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+/*========== ABOUT ==========*/
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 40px;
+  font-size: large;
+}
+
+.about__img {
+  width: 380px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+
+
+.about__img,
+.app__img {
+  width: 380px;
+  order: -1;
+}
+
+
+
+.button {
+  display: inline-block;
+ 
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+
+  border-radius: .5rem;
+  color: #FFF;
+
+  transition: .3s;
+
+}
+
+
+.button:hover {
+  background-color: rgb(72, 85, 53);
+} 

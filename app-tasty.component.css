@@ -1,0 +1,54 @@
+/*========== APP ==========*/
+
+.app__container {
+  align-content: center;
+  margin-top: 100px;
+
+  margin-right: 180px ;
+  margin-left: 180px ;
+
+}
+
+
+.section-title,
+.section-subtitle {
+  text-align: left;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: bolder;
+
+  margin-bottom: 50px;
+}
+
+.section-subtitle {
+  display: block;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+.app__data {
+  text-align: center;
+}
+
+.app__description {
+  margin-bottom: 40px;
+  font-size: large;
+}
+
+.app__stores {
+  margin-bottom: 40px;
+}
+
+.app__store {
+  width: 190px;
+  margin: 0 6px;
+}
+
+.app__img {
+  width: 360px;
+  justify-self: center;
+}
