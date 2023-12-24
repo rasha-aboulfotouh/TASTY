@@ -11,6 +11,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppTastyComponent } from './app-tasty/app-tasty.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +23,18 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     ContactUsComponent,
     AppTastyComponent,
-    FooterComponent
+    FooterComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    ReactiveFormsModule,
+
+    FormsModule,
+
+    
   
   
 

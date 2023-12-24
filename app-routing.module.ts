@@ -9,6 +9,7 @@ import { MenuComponent} from './menu/menu.component';
 import { AppTastyComponent} from './app-tasty/app-tasty.component';
 import { ContactUsComponent} from './contact-us/contact-us.component';
 import { FooterComponent} from './footer/footer.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
 
@@ -19,6 +20,12 @@ const routes: Routes = [
   { path: 'app-tasty', component: AppTastyComponent },
   { path: 'contact-us', component:  ContactUsComponent },
   { path: 'footer', component:  FooterComponent},
+
+  { path: 'reactive-form', component: ReactiveFormComponent },
+
+ 
+
+
 
 ];
 

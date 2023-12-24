@@ -1,0 +1,33 @@
+
+
+section {
+    margin: 200px 0;
+}
+
+input {
+    width: 350px;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+
+label {
+    width: 100px;
+    color: brown;
+}
+
+
+/* .form-group {
+    align-items: center;
+
+
+}
+
+.power {
+    margin-bottom: 150px;
+}
+
+
+
+select {
+    align-content: center;
+} */

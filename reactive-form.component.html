@@ -1,0 +1,143 @@
+<section class="text-center">
+    <!-- The first Way type of reactive form  -->
+
+    <h2>Form control</h2>
+    <label for="name">Name: </label>
+    <input id="name" type="text" [formControl]="name">
+
+    <p>Value: {{ name.value }}</p>
+
+    <button type="button" (click)="updateName()">Update Name</button>
+
+
+    <pre></pre>
+    <pre></pre>
+
+    <!-- The second Way type of reactive form using Group -->
+
+    <h2>Form Group</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+        <label for="first-name">First Name: </label>
+        <input id="first-name" type="text" formControlName="firstName"><br>
+        <pre></pre>
+
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" formControlName="lastName">
+
+
+        <div formGroupName="address">
+            <h5>Address</h5>
+
+            <label for="street">Street: </label>
+            <input id="street" type="text" formControlName="street"> <br>
+
+            <label for="city">City: </label>
+            <input id="city" type="text" formControlName="city"> <br>
+
+            <label for="state">State: </label>
+            <input id="state" type="text" formControlName="state"> <br>
+
+            <label for="zip">Zip Code: </label>
+            <input id="zip" type="text" formControlName="zip"> <br>
+        </div>
+
+
+        <p>Complete the form to enable button.</p>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </form>
+
+
+    <pre></pre>
+    <pre></pre>
+
+    <!-- The third Way type of reactive form using Gourp form Builder -->
+
+    <h2>Form Builder</h2>
+
+    <form [formGroup]="profileFormBuilder" (ngSubmit)="onSubmitbuilder()">
+
+        <label for="first-name">First Name: </label>
+        <input id="first-name" type="text" formControlName="firstName"><br>
+        <pre></pre>
+
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" formControlName="lastName">
+
+        <div formGroupName="address">
+            <h5>Address</h5>
+
+            <label for="street">Street: </label>
+            <input id="street" type="text" formControlName="street"> <br>
+
+            <label for="city">City: </label>
+            <input id="city" type="text" formControlName="city"> <br>
+
+            <label for="state">State: </label>
+            <input id="state" type="text" formControlName="state"> <br>
+
+            <label for="zip">Zip Code: </label>
+            <input id="zip" type="text" formControlName="zip"> <br>
+        </div>
+
+        <p>Form Status: {{ profileForm.status }}</p>
+
+        <p>Complete the form to enable button.</p>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+    </form>
+
+    <pre></pre>
+    <pre></pre>
+
+
+    <!-- The forth Way type of reactive form  using group form builder with array -->
+    <h2> Form Builder with array </h2>
+
+    <form [formGroup]="profileFormBArray" (ngSubmit)="onSubmitarray()">
+
+        <label for="first-name">First Name: </label>
+        <input id="first-name" type="text" formControlName="firstName"><br>
+        <pre></pre>
+
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" formControlName="lastName">
+
+        <div formGroupName="address">
+            <h5>Address</h5>
+
+            <label for="street">Street: </label>
+            <input id="street" type="text" formControlName="street"> <br>
+
+            <label for="city">City: </label>
+            <input id="city" type="text" formControlName="city"> <br>
+
+            <label for="state">State: </label>
+            <input id="state" type="text" formControlName="state"> <br>
+
+            <label for="zip">Zip Code: </label>
+            <input id="zip" type="text" formControlName="zip"> <br>
+        </div>
+
+        <div formArrayName="aliases">
+            <h2>Aliases</h2>
+            <button type="button" (click)="addAlias()">+ Add another alias</button>
+          
+            <div *ngFor="let alias of aliases.controls; let i=index">
+              <!-- The repeated alias template -->
+              <label for="alias-{{ i }}">Alias:</label>
+              <input id="alias-{{ i }}" type="text" [formControlName]="i">
+            </div>
+        </div>
+
+
+        <p>Complete the form to enable button.</p>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+        <p>Form Status: {{ profileFormBArray.status }}</p>
+
+    </form>
+
+
+    
+</section>
